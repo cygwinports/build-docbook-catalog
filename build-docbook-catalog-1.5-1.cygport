@@ -1,0 +1,12 @@
+
+
+SRC_URI="mirror://gentoo/${P}.bz2"
+SRC_DIR=.
+
+PATCH_URI="1.5-simple-xml-dtd.patch"
+
+src_compile() { :; }
+
+src_install() {
+	newbin ${S}/${P} ${PN}
+}
