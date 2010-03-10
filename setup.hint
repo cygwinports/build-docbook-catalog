@@ -1,5 +1,5 @@
 category: Text
-requires: bash grep libxml2
+requires: bash coreutils findutils grep libxml2 util-linux
 sdesc: "DocBook XML DTD registration script"
 ldesc: "DocBook is a schema (available in several languages including 
 RELAX NG, SGML and XML DTDs, and W3C XML Schema) maintained by the 

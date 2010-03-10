@@ -10,8 +10,11 @@ This package provides a script to register XML DTDs with the XML catalog.
 
 Runtime requirements:
   bash
+  coreutils
+  findutils
   grep
   libxml2
+  util-linux
 
 Build requirements:
   cygport-0.9.10-1
