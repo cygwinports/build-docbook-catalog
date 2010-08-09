@@ -17,7 +17,7 @@ Runtime requirements:
   util-linux
 
 Build requirements:
-  cygport-0.9.10-1
+  cygport-0.9.88-1
 
 Canonical website:
   http://gentoo.org/
@@ -44,6 +44,9 @@ command-line: 'cygcheck -cd build-docbook-catalog'.
 -------------------------------------------
 
 Port Notes:
+
+----- version 1.5-2 -----
+Patch to create XML catalog directory if not present.
 
 ----- version 1.5-1 -----
 Initial release for Cygwin 1.7.
