@@ -1,0 +1,27 @@
+NAME="build-docbook-catalog"
+VERSION=1.5
+RELEASE=2
+CATEGORY="Text"
+SUMMARY="DocBook XML DTD registration script"
+DESCRIPTION="DocBook is a schema (available in several languages including
+RELAX NG, SGML and XML DTDs, and W3C XML Schema) maintained by the DocBook
+Technical Committee of OASIS. It is particularly well suited to books and
+papers about computer hardware and software (though it is by no means limited
+to these applications).
+
+This package provides a script to register XML DTDs with the XML catalog."
+
+SRC_URI="mirror://gentoo/${NAME}-${VERSION}.bz2"
+SRC_DIR=.
+PATCH_URI="1.5-simple-xml-dtd.patch
+           1.5-mkdir-etc-xml.patch"
+
+ARCH=noarch
+
+REQUIRES="coreutils findutils grep libxml2 util-linux"
+
+src_compile() { :; }
+
+src_install() {
+	newbin ${S}/${P} ${PN}
+}
